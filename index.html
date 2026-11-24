@@ -1,0 +1,1314 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>悠宝三岁双人 - 亲子影像品牌,记录两个孩子一起长大的每一天</title>
+<meta name="description" content="悠宝三岁双人官方网站，专注双胞胎与两宝家庭的亲子纪录影像品牌，以高清原创视频记录两个孩子三岁前后的成长日常、育儿经验与家庭故事。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23f4a261'/%3E%3Ccircle cx='24' cy='28' r='9' fill='%23fff7ee'/%3E%3Ccircle cx='42' cy='28' r='9' fill='%23fff7ee'/%3E%3Cpath d='M14 46c4-8 10-11 18-11s14 3 18 11' fill='none' stroke='%237a4a1f' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --yb-amber:#f4a261;
+  --yb-amber-deep:#e07b39;
+  --yb-cream:#fff7ee;
+  --yb-paper:#fffdf9;
+  --yb-brown:#4a3222;
+  --yb-brown-soft:#7a5c45;
+  --yb-line:#f0dfcb;
+  --yb-mint:#8fbf9f;
+  --yb-shadow:0 10px 30px rgba(122,74,31,.10);
+  --yb-radius:18px;
+  --yb-head-h:132px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--yb-head-h) + 12px)}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--yb-paper);
+  color:var(--yb-brown);
+  line-height:1.75;
+  font-size:16px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{margin:0;padding:0;list-style:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:800}
+p{margin:0}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+/* 吸顶公告 + 页头 */
+.yb-sticky-wrap{position:sticky;top:0;z-index:60}
+.yb-notice-bar{
+  background:linear-gradient(90deg,#4a3222,#7a5c45 55%,#4a3222);
+  color:#ffe9d2;
+  font-size:13.5px;
+  letter-spacing:.3px;
+}
+.yb-notice-inner{
+  max-width:1180px;margin:0 auto;padding:8px 20px;
+  display:flex;align-items:center;gap:12px;
+}
+.yb-notice-tag{
+  flex:0 0 auto;background:var(--yb-amber);color:#4a3222;
+  font-weight:800;font-size:12px;padding:2px 9px;border-radius:999px;
+}
+.yb-notice-scroll{overflow:hidden;white-space:nowrap;flex:1 1 auto;text-overflow:ellipsis}
+.yb-notice-scroll b{color:#ffd7a8}
+.yb-notice-date{flex:0 0 auto;opacity:.75;font-size:12.5px}
+
+.yb-header{
+  background:rgba(255,253,249,.96);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--yb-line);
+  box-shadow:0 4px 18px rgba(122,74,31,.05);
+}
+.yb-header-inner{
+  max-width:1180px;margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:22px;
+}
+.yb-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.yb-brand-mark{
+  width:44px;height:44px;border-radius:14px;
+  background:radial-gradient(circle at 30% 25%,#ffd9b0,var(--yb-amber) 60%,var(--yb-amber-deep));
+  display:grid;place-items:center;color:#fff;font-weight:900;font-size:19px;
+  box-shadow:0 6px 16px rgba(224,123,57,.28);
+}
+.yb-brand-text strong{display:block;font-size:17.5px;letter-spacing:.5px}
+.yb-brand-text span{display:block;font-size:11.5px;color:var(--yb-brown-soft);letter-spacing:1.4px}
+.yb-nav{display:flex;gap:4px;flex:1 1 auto;flex-wrap:wrap}
+.yb-nav a{
+  font-size:14.5px;padding:7px 12px;border-radius:10px;color:var(--yb-brown-soft);
+  font-weight:600;transition:.2s;white-space:nowrap;
+}
+.yb-nav a:hover{background:#fdf0e2;color:var(--yb-amber-deep)}
+.yb-header-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.yb-search{
+  display:flex;align-items:center;gap:8px;background:#fdf2e6;
+  border:1px solid var(--yb-line);border-radius:999px;padding:5px 6px 5px 14px;
+}
+.yb-search input{
+  border:none;background:transparent;outline:none;font-size:13.5px;width:132px;color:var(--yb-brown);
+}
+.yb-search input::placeholder{color:#b99a80}
+.yb-search button{
+  background:var(--yb-amber);color:#4a3222;font-weight:800;font-size:13px;
+  padding:6px 13px;border-radius:999px;transition:.2s;
+}
+.yb-search button:hover{background:var(--yb-amber-deep);color:#fff}
+.yb-btn-ghost{
+  border:1.5px solid var(--yb-brown);color:var(--yb-brown);font-weight:700;
+  font-size:13.5px;padding:7px 15px;border-radius:999px;transition:.2s;white-space:nowrap;
+}
+.yb-btn-ghost:hover{background:var(--yb-brown);color:#fff}
+.yb-burger{display:none;font-size:22px;padding:4px 8px;border-radius:10px;background:#fdf2e6}
+.yb-search-tip{
+  display:none;max-width:1180px;margin:0 auto;padding:0 20px 10px;
+  font-size:13px;color:var(--yb-amber-deep);
+}
+.yb-search-tip.is-on{display:block}
+
+/* 通用 */
+.yb-wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.yb-section{padding:64px 0}
+.yb-section--tint{background:linear-gradient(180deg,#fff7ee,#fffdf9)}
+.yb-section--soft{background:#fdf3e8}
+.yb-h2{font-size:clamp(22px,3vw,31px);letter-spacing:.4px}
+.yb-h2 .yb-accent{color:var(--yb-amber-deep)}
+.yb-lead{color:var(--yb-brown-soft);font-size:15.5px;max-width:760px;margin-top:10px}
+.yb-sec-head{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:20px;
+  margin-bottom:30px;flex-wrap:wrap;
+}
+.yb-eyebrow{
+  display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:800;
+  letter-spacing:2px;color:var(--yb-amber-deep);text-transform:uppercase;margin-bottom:8px;
+}
+.yb-eyebrow::before{content:"";width:22px;height:3px;border-radius:2px;background:var(--yb-amber)}
+.yb-card{
+  background:#fff;border:1px solid var(--yb-line);border-radius:var(--yb-radius);
+  box-shadow:var(--yb-shadow);overflow:hidden;
+}
+.yb-chip{
+  display:inline-block;font-size:12px;font-weight:700;padding:2.5px 10px;border-radius:999px;
+  background:#fdf0e2;color:var(--yb-amber-deep);
+}
+.yb-chip--mint{background:#e8f5ec;color:#3d7a55}
+.yb-chip--gray{background:#f3ece5;color:#8a6b52}
+.yb-meta{font-size:12.5px;color:#a0866f;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.yb-tag-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+
+/* 首屏 */
+.yb-hero{
+  background:
+    radial-gradient(900px 420px at 88% -10%,#ffe6c9 0%,transparent 60%),
+    radial-gradient(700px 380px at 0% 110%,#fde9d4 0%,transparent 55%),
+    var(--yb-cream);
+  padding:54px 0 62px;
+  border-bottom:1px solid var(--yb-line);
+}
+.yb-hero-grid{
+  display:grid;grid-template-columns:minmax(0,5fr) minmax(0,5fr);
+  gap:48px;align-items:center;
+}
+.yb-hero h1{
+  font-size:clamp(34px,5.4vw,58px);
+  letter-spacing:1px;line-height:1.15;
+}
+.yb-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(90deg,var(--yb-amber-deep),var(--yb-amber));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.yb-hero-claim{
+  margin-top:14px;font-size:16.5px;font-weight:800;color:var(--yb-amber-deep);letter-spacing:.6px;
+}
+.yb-hero-intro{margin-top:16px;color:var(--yb-brown-soft);font-size:15.5px;max-width:545px}
+.yb-hero-intro strong{color:var(--yb-brown)}
+.yb-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:26px 0 24px;
+}
+.yb-stat{
+  background:#fff;border:1px solid var(--yb-line);border-radius:14px;padding:13px 14px;
+  box-shadow:0 6px 18px rgba(122,74,31,.06);
+}
+.yb-stat b{display:block;font-size:23px;color:var(--yb-amber-deep);letter-spacing:.5px}
+.yb-stat span{font-size:12.5px;color:var(--yb-brown-soft);font-weight:600}
+.yb-hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.yb-btn{
+  display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:14.5px;
+  padding:11px 24px;border-radius:999px;transition:.22s;border:1.5px solid transparent;
+}
+.yb-btn--main{background:var(--yb-brown);color:#fff;box-shadow:0 8px 22px rgba(74,50,34,.22)}
+.yb-btn--main:hover{background:var(--yb-amber-deep);transform:translateY(-2px)}
+.yb-btn--line{border-color:var(--yb-brown);color:var(--yb-brown)}
+.yb-btn--line:hover{background:var(--yb-brown);color:#fff}
+.yb-btn--amber{background:var(--yb-amber);color:#4a3222}
+.yb-btn--amber:hover{background:var(--yb-amber-deep);color:#fff}
+.yb-hero-visual{position:relative}
+.yb-hero-visual img{
+  width:100%;aspect-ratio:4/4.4;object-fit:cover;border-radius:26px;
+  box-shadow:0 24px 54px rgba(122,74,31,.24);border:6px solid #fff;
+}
+.yb-hero-badge{
+  position:absolute;bottom:18px;left:18px;right:18px;
+  background:rgba(255,253,249,.94);border-radius:14px;padding:11px 15px;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  font-size:13px;font-weight:700;color:var(--yb-brown);box-shadow:0 10px 24px rgba(122,74,31,.16);
+  backdrop-filter:blur(6px);
+}
+.yb-hero-badge span:last-child{color:var(--yb-amber-deep);font-size:12px;font-weight:800}
+
+/* 精选内容 */
+.yb-feature-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,4fr);gap:28px;align-items:start}
+.yb-feature-main img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.yb-feature-body{padding:22px 24px 26px}
+.yb-feature-body h3{font-size:22px;margin:10px 0 8px}
+.yb-feature-body p{color:var(--yb-brown-soft);font-size:14.8px}
+.yb-feature-side{display:grid;gap:16px}
+.yb-mini{
+  display:grid;grid-template-columns:96px minmax(0,1fr);gap:13px;padding:12px;
+  background:#fff;border:1px solid var(--yb-line);border-radius:14px;transition:.22s;
+}
+.yb-mini:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(122,74,31,.12)}
+.yb-mini img{width:96px;height:72px;object-fit:cover;border-radius:10px}
+.yb-mini h4{font-size:14.5px;line-height:1.45;margin-bottom:5px}
+.yb-mini p{font-size:12.5px;color:#a0866f}
+
+/* 视频列表 */
+.yb-video-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.yb-video-item{
+  background:#fff;border:1px solid var(--yb-line);border-radius:16px;padding:18px 20px;
+  transition:.22s;display:flex;flex-direction:column;gap:9px;
+}
+.yb-video-item:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(122,74,31,.11);border-color:#e9c9a6}
+.yb-video-item h3{font-size:16.5px}
+.yb-video-item h3 a:hover{color:var(--yb-amber-deep)}
+.yb-video-item p{font-size:14px;color:var(--yb-brown-soft)}
+.yb-video-real{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;
+  margin-top:auto;padding-top:11px;border-top:1px dashed var(--yb-line);
+}
+.yb-video-author{font-size:12.8px;font-weight:700;color:var(--yb-brown-soft)}
+.yb-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.yb-act{
+  font-size:12.5px;font-weight:700;padding:4px 11px;border-radius:999px;
+  background:#fdf3e8;color:#8a6b52;transition:.18s;border:1px solid transparent;
+}
+.yb-act:hover{background:#fbe4cd;color:var(--yb-amber-deep)}
+.yb-act.is-liked{background:var(--yb-amber);color:#4a3222}
+.yb-act.is-saved{background:#e8f5ec;color:#3d7a55;border-color:#bfe2cc}
+.yb-play{
+  display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:800;color:var(--yb-amber-deep);
+}
+.yb-feature-body .yb-play{margin-top:12px}
+
+/* 专题 */
+.yb-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.yb-topic{
+  background:#fff;border:1px solid var(--yb-line);border-radius:16px;padding:20px 20px 18px;
+  display:flex;flex-direction:column;gap:10px;transition:.22s;
+}
+.yb-topic:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(122,74,31,.12)}
+.yb-topic h3{font-size:17px}
+.yb-topic-status{font-size:12px;font-weight:800;color:var(--yb-amber-deep)}
+.yb-topic ul{display:grid;gap:7px;margin-top:2px}
+.yb-topic li{font-size:13.5px;color:var(--yb-brown-soft);padding-left:15px;position:relative}
+.yb-topic li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--yb-amber)}
+
+/* 创作者 */
+.yb-authors-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.yb-author{
+  background:#fff;border:1px solid var(--yb-line);border-radius:16px;padding:20px 18px;
+  text-align:center;transition:.22s;display:flex;flex-direction:column;align-items:center;gap:6px;
+}
+.yb-author:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(122,74,31,.12)}
+.yb-avatar{
+  width:64px;height:64px;border-radius:50%;display:grid;place-items:center;
+  font-size:22px;font-weight:900;color:#fff;letter-spacing:1px;
+}
+.yb-author h3{font-size:15.5px;margin-top:5px}
+.yb-author .yb-field{font-size:12.5px;color:var(--yb-amber-deep);font-weight:800}
+.yb-author .yb-nums{font-size:12px;color:#a0866f;display:flex;gap:10px;justify-content:center;margin:3px 0 5px}
+.yb-author p{font-size:12.8px;color:var(--yb-brown-soft);text-align:left}
+.yb-author-btn{
+  margin-top:8px;font-size:12.5px;font-weight:800;color:var(--yb-brown);
+  border:1px solid var(--yb-line);border-radius:999px;padding:4px 14px;transition:.18s;
+}
+.yb-author-btn:hover{background:var(--yb-amber);border-color:var(--yb-amber);color:#4a3222}
+
+/* 解析长文 */
+.yb-article{max-width:920px;margin:0 auto}
+.yb-article h3{font-size:19px;margin:30px 0 10px;padding-left:14px;position:relative}
+.yb-article h3::before{
+  content:"";position:absolute;left:0;top:5px;bottom:5px;width:5px;border-radius:3px;
+  background:linear-gradient(180deg,var(--yb-amber),var(--yb-amber-deep));
+}
+.yb-article p{color:#5b4432;font-size:15.4px;margin-bottom:4px}
+.yb-article p+p{margin-top:12px}
+.yb-quote{
+  margin:26px 0;padding:18px 22px;background:#fff;border-left:4px solid var(--yb-amber);
+  border-radius:0 14px 14px 0;box-shadow:0 8px 22px rgba(122,74,31,.07);
+  font-size:15px;color:#6b5039;font-weight:600;
+}
+.yb-inline-figure{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:24px 0}
+.yb-inline-figure figure{margin:0}
+.yb-inline-figure img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;border:1px solid var(--yb-line)}
+.yb-inline-figure figcaption{font-size:12.5px;color:#a0866f;margin-top:7px;text-align:center}
+
+/* 榜单/评价 */
+.yb-rank-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr);gap:26px;align-items:start}
+.yb-rank{background:#fff;border:1px solid var(--yb-line);border-radius:18px;padding:20px 22px}
+.yb-rank h3{font-size:17px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center}
+.yb-rank h3 small{font-size:11.5px;color:#a0866f;font-weight:600;letter-spacing:.5px}
+.yb-rank li{
+  display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:10px;align-items:center;
+  padding:10px 0;border-bottom:1px dashed var(--yb-line);font-size:14px;
+}
+.yb-rank li:last-child{border-bottom:none}
+.yb-rank-no{
+  width:24px;height:24px;border-radius:8px;display:grid;place-items:center;
+  font-size:12.5px;font-weight:900;background:#fdf0e2;color:var(--yb-amber-deep);
+}
+.yb-rank li:nth-child(1) .yb-rank-no{background:var(--yb-amber);color:#4a3222}
+.yb-rank li:nth-child(2) .yb-rank-no{background:#fbe0c6;color:#8a4b16}
+.yb-rank li:nth-child(3) .yb-rank-no{background:#f6ead9;color:#96714f}
+.yb-rank-score{font-size:12.5px;font-weight:800;color:var(--yb-amber-deep)}
+.yb-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.yb-comment{
+  background:#fff;border:1px solid var(--yb-line);border-radius:16px;padding:16px 18px;
+  display:flex;flex-direction:column;gap:8px;
+}
+.yb-comment-head{display:flex;align-items:center;gap:10px}
+.yb-comment-head .yb-avatar{width:36px;height:36px;font-size:14px}
+.yb-comment-head strong{font-size:13.5px}
+.yb-comment-head small{font-size:11.5px;color:#a0866f}
+.yb-comment p{font-size:13.8px;color:var(--yb-brown-soft)}
+.yb-stars{color:var(--yb-amber-deep);font-size:12.5px;letter-spacing:1px}
+
+/* 动态 & 合作 & FAQ */
+.yb-updates{display:grid;gap:14px}
+.yb-update{
+  display:grid;grid-template-columns:92px minmax(0,1fr);gap:16px;padding:15px 18px;
+  background:#fff;border:1px solid var(--yb-line);border-radius:14px;align-items:start;
+}
+.yb-update time{font-size:12.5px;font-weight:800;color:var(--yb-amber-deep)}
+.yb-update h3{font-size:15px;margin-bottom:4px}
+.yb-update p{font-size:13.5px;color:var(--yb-brown-soft)}
+.yb-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.yb-partner{
+  background:#fff;border:1px dashed #e6cfb5;border-radius:14px;padding:18px 14px;text-align:center;
+  font-size:14px;font-weight:800;color:var(--yb-brown-soft);transition:.2s;
+}
+.yb-partner:hover{border-style:solid;border-color:var(--yb-amber);color:var(--yb-amber-deep);background:#fffaf4}
+.yb-faq{display:grid;gap:12px;max-width:900px;margin:0 auto}
+.yb-faq details{
+  background:#fff;border:1px solid var(--yb-line);border-radius:14px;padding:0 18px;transition:.2s;
+}
+.yb-faq details[open]{border-color:#e9c9a6;box-shadow:0 10px 26px rgba(122,74,31,.08)}
+.yb-faq summary{
+  list-style:none;cursor:pointer;padding:16px 0;font-weight:800;font-size:15px;
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.yb-faq summary::-webkit-details-marker{display:none}
+.yb-faq summary::after{content:"+";font-size:20px;color:var(--yb-amber-deep);font-weight:400;line-height:1}
+.yb-faq details[open] summary::after{content:"–"}
+.yb-faq .yb-a{padding:0 0 17px;font-size:14px;color:var(--yb-brown-soft)}
+
+/* 投稿/联系 */
+.yb-cta{
+  background:linear-gradient(115deg,#4a3222,#7a5c45 60%,#4a3222);
+  border-radius:24px;padding:40px 38px;color:#ffeede;
+  display:grid;grid-template-columns:minmax(0,7fr) minmax(0,3fr);gap:28px;align-items:center;
+}
+.yb-cta h2{font-size:clamp(21px,2.7vw,28px);color:#fff}
+.yb-cta p{margin-top:10px;font-size:14.8px;color:#f0d7bf;max-width:640px}
+.yb-cta-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.yb-cta .yb-btn--amber{box-shadow:0 10px 26px rgba(0,0,0,.24)}
+
+/* 页脚 */
+.yb-footer{background:#2f2117;color:#d9c6b3;padding:52px 0 26px;margin-top:20px}
+.yb-footer-grid{display:grid;grid-template-columns:minmax(0,4fr) repeat(3,minmax(0,2fr));gap:30px}
+.yb-footer h4{color:#fff;font-size:14.5px;margin-bottom:13px;letter-spacing:.5px}
+.yb-footer p{font-size:13.4px;line-height:1.85;color:#c4ad97}
+.yb-footer li{margin-bottom:8px;font-size:13.4px}
+.yb-footer a:hover{color:var(--yb-amber)}
+.yb-footer-brand{display:flex;align-items:center;gap:11px;margin-bottom:13px}
+.yb-footer-brand .yb-brand-mark{width:40px;height:40px;font-size:17px;border-radius:12px}
+.yb-footer-brand strong{color:#fff;font-size:16.5px}
+.yb-footer-brand span{display:block;font-size:11px;letter-spacing:1.4px;color:#a9927d}
+.yb-copyright{
+  border-top:1px solid #463329;margin-top:34px;padding-top:20px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#a9927d;
+}
+
+/* 悬浮交互 */
+.yb-to-top{
+  position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;
+  background:var(--yb-brown);color:#ffeede;font-size:19px;display:grid;place-items:center;
+  box-shadow:0 12px 26px rgba(47,33,23,.34);opacity:0;pointer-events:none;transition:.25s;z-index:70;
+}
+.yb-to-top.is-on{opacity:1;pointer-events:auto}
+.yb-to-top:hover{background:var(--yb-amber-deep)}
+.yb-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,24px);
+  background:#2f2117;color:#ffeede;font-size:13.5px;font-weight:700;
+  padding:11px 22px;border-radius:999px;opacity:0;pointer-events:none;transition:.28s;z-index:90;
+  box-shadow:0 14px 34px rgba(47,33,23,.34);
+}
+.yb-toast.is-on{opacity:1;transform:translate(-50%,0)}
+.yb-modal{
+  position:fixed;inset:0;background:rgba(47,33,23,.56);display:none;place-items:center;
+  padding:24px;z-index:95;
+}
+.yb-modal.is-on{display:grid}
+.yb-modal-box{
+  background:var(--yb-paper);border-radius:20px;max-width:560px;width:100%;
+  padding:28px 26px;box-shadow:0 30px 70px rgba(0,0,0,.34);max-height:86vh;overflow:auto;
+}
+.yb-modal-box h3{font-size:20px;margin-bottom:8px}
+.yb-modal-box p{font-size:14px;color:var(--yb-brown-soft)}
+.yb-modal-close{
+  float:right;font-size:20px;font-weight:800;color:#a0866f;line-height:1;
+}
+.yb-field-input,.yb-field-area{
+  width:100%;border:1px solid var(--yb-line);border-radius:12px;padding:10px 13px;
+  font-size:14px;font-family:inherit;margin-top:8px;background:#fff;color:var(--yb-brown);outline:none;
+}
+.yb-field-area{min-height:96px;resize:vertical}
+.yb-field-input:focus,.yb-field-area:focus{border-color:var(--yb-amber);box-shadow:0 0 0 3px rgba(244,162,97,.18)}
+.yb-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:16px}
+
+/* 响应式 */
+@media (max-width:980px){
+  .yb-hero-grid,.yb-feature-grid,.yb-rank-grid,.yb-cta{grid-template-columns:minmax(0,1fr)}
+  .yb-authors-grid,.yb-partners{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .yb-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .yb-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .yb-nav{display:none}
+  .yb-nav.is-open{
+    display:flex;position:absolute;left:0;right:0;top:100%;
+    background:var(--yb-paper);border-bottom:1px solid var(--yb-line);
+    padding:10px 16px 16px;flex-direction:column;gap:2px;box-shadow:0 18px 30px rgba(122,74,31,.12);
+  }
+  .yb-nav.is-open a{padding:11px 12px;font-size:15px}
+  .yb-burger{display:block}
+  .yb-header-inner{position:relative}
+  .yb-cta-actions{justify-content:flex-start}
+}
+@media (max-width:700px){
+  :root{--yb-head-h:126px}
+  .yb-search{display:none}
+  .yb-notice-inner{flex-wrap:wrap;gap:6px 10px;padding:7px 16px}
+  .yb-notice-date{display:none}
+  .yb-hero{padding:36px 0 44px}
+  .yb-hero-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .yb-stat{padding:10px 10px}
+  .yb-stat b{font-size:19px}
+  .yb-stat span{font-size:11.5px}
+  .yb-video-list,.yb-comments,.yb-inline-figure{grid-template-columns:minmax(0,1fr)}
+  .yb-topic-grid,.yb-authors-grid,.yb-partners{grid-template-columns:minmax(0,1fr)}
+  .yb-footer-grid{grid-template-columns:minmax(0,1fr)}
+  .yb-section{padding:44px 0}
+  .yb-update{grid-template-columns:minmax(0,1fr);gap:6px}
+  .yb-cta{padding:28px 22px}
+  .yb-hero-visual img{aspect-ratio:4/4}
+  .yb-to-top{right:14px;bottom:18px;width:42px;height:42px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="yb-sticky-wrap">
+  <div class="yb-notice-bar">
+    <div class="yb-notice-inner">
+      <span class="yb-notice-tag">官方公告</span>
+      <div class="yb-notice-scroll">
+        <b>新增</b>《三岁这一年·双人篇》第 12 集已上线；<b>新增</b> 双宝家庭投稿通道开放，11 月 30 日前上传可参与「一起长大」主题企划；<b>更新</b> 创作者中心支持高清原片下载。
+      </div>
+      <span class="yb-notice-date">2026-11-22</span>
+    </div>
+  </div>
+
+  <header class="yb-header">
+    <div class="yb-header-inner">
+      <a class="yb-brand" href="#top" aria-label="悠宝三岁双人 品牌首页">
+        <span class="yb-brand-mark" aria-hidden="true">悠</span>
+        <span class="yb-brand-text">
+          <strong>悠宝三岁双人</strong>
+          <span>KIDS&nbsp;FILM&nbsp;STUDIO</span>
+        </span>
+      </a>
+      <nav class="yb-nav" id="ybNav" aria-label="主导航">
+        <a href="#top">首页</a>
+        <a href="#feature">精选内容</a>
+        <a href="#videos">亲子影像</a>
+        <a href="#topics">专题企划</a>
+        <a href="#creators">创作者</a>
+        <a href="#insight">品牌解析</a>
+        <a href="#voices">用户口碑</a>
+        <a href="#faq">帮助中心</a>
+      </nav>
+      <div class="yb-header-tools">
+        <div class="yb-search">
+          <input id="ybSearchInput" type="search" placeholder="搜索双宝日常、三岁、露营…" aria-label="站内搜索">
+          <button type="button" id="ybSearchBtn">搜索</button>
+        </div>
+        <a class="yb-btn-ghost" href="#submit" id="ybSubmitTop">投稿</a>
+        <button class="yb-burger" id="ybBurger" type="button" aria-expanded="false" aria-controls="ybNav">☰</button>
+      </div>
+    </div>
+    <div class="yb-search-tip" id="ybSearchTip" role="status" aria-live="polite"></div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="yb-hero" aria-labelledby="ybHeroTitle">
+    <div class="yb-wrap yb-hero-grid">
+      <div>
+        <span class="yb-eyebrow">亲子影像品牌 · 官方网站</span>
+        <h1 id="ybHeroTitle">悠宝三岁双人</h1>
+        <p class="yb-hero-claim">两个孩子一起长大的每一天，都值得被高清记录。</p>
+        <p class="yb-hero-intro">
+          悠宝三岁双人是一个面向双胞胎与两宝家庭的<strong>亲子纪录片品牌</strong>，我们以企业级制作标准运营内容生态：从三岁生日当天的第一支原创短片，到幼儿园门口的互相等待，用镜头陪伴每一个家庭走过真实而温暖的成长节点。
+        </p>
+        <div class="yb-hero-stats">
+          <div class="yb-stat"><b>1,280+</b><span>原创亲子短片</span></div>
+          <div class="yb-stat"><b>46.8万</b><span>家庭社区用户</span></div>
+          <div class="yb-stat"><b>4.9 / 5</b><span>用户口碑评分</span></div>
+        </div>
+        <div class="yb-hero-actions">
+          <a class="yb-btn yb-btn--main" href="#feature">观看精选</a>
+          <a class="yb-btn yb-btn--amber" href="#submit">上传作品</a>
+          <a class="yb-btn yb-btn--line" href="#creators">认识创作者</a>
+        </div>
+      </div>
+      <div class="yb-hero-visual">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 660'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffe9cd'/%3E%3Cstop offset='1' stop-color='%23f7c99a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='660' fill='url(%23sky)'/%3E%3Ccircle cx='470' cy='110' r='58' fill='%23fff3dd' opacity='.85'/%3E%3Crect x='40' y='520' width='520' height='6' rx='3' fill='%23d99b62'/%3E%3Cg%3E%3Ccircle cx='215' cy='330' r='72' fill='%23fff7ee'/%3E%3Ccircle cx='185' cy='315' r='7' fill='%234a3222'/%3E%3Ccircle cx='245' cy='315' r='7' fill='%234a3222'/%3E%3Cpath d='M196 352 q20 16 40 0' stroke='%23e07b39' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M150 470 q65-52 130 0' stroke='%23e07b39' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='215' cy='248' r='24' fill='%23e07b39'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='390' cy='352' r='66' fill='%23fff7ee'/%3E%3Ccircle cx='364' cy='338' r='6.5' fill='%234a3222'/%3E%3Ccircle cx='416' cy='338' r='6.5' fill='%234a3222'/%3E%3Cpath d='M372 372 q18 14 36 0' stroke='%23e07b39' stroke-width='4.6' fill='none' stroke-linecap='round'/%3E%3Cpath d='M332 476 q58-46 116 0' stroke='%238fbf9f' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='390' cy='278' r='21' fill='%238fbf9f'/%3E%3C/g%3E%3Cpath d='M180 470 q35-30 60 0' stroke='%23c17a3f' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Cpath d='M392 476 q30-26 52 0' stroke='%23a4cbb0' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Crect x='70' y='572' width='120' height='10' rx='5' fill='%23f4a261' opacity='.7'/%3E%3Crect x='330' y='590' width='190' height='10' rx='5' fill='%23f4a261' opacity='.55'/%3E%3C/svg%3E" alt="悠宝三岁双人品牌首屏插画，两个三岁孩子在暖橙色天空下牵手奔跑" width="600" height="660">
+        <div class="yb-hero-badge">
+          <span>本周更新 · 双人成长纪录第 12 集</span>
+          <span>18:42 · 高清</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 精选内容 -->
+  <section class="yb-section" id="feature" aria-labelledby="ybFeatureTitle">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">焦点推荐</span>
+          <h2 class="yb-h2" id="ybFeatureTitle">悠宝三岁双人 <span class="yb-accent">本周精选</span></h2>
+          <p class="yb-lead">由官方编辑部与企业签约创作者共同挑选，聚焦双宝家庭最真实的三岁日常，每一支都是正版高清的原创记录。</p>
+        </div>
+        <a class="yb-btn yb-btn--line" href="#videos">浏览全部内容</a>
+      </div>
+
+      <div class="yb-feature-grid">
+        <article class="yb-card yb-feature-main">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 540'%3E%3Crect width='960' height='540' fill='%23fdf0e0'/%3E%3Crect x='0' y='380' width='960' height='160' fill='%23f4c797'/%3E%3Ccircle cx='770' cy='120' r='62' fill='%23ffd9a8'/%3E%3Crect x='80' y='150' width='300' height='230' rx='16' fill='%23fff7ee' stroke='%23e6cfb5' stroke-width='3'/%3E%3Crect x='104' y='176' width='252' height='130' rx='10' fill='%23fbe4cd'/%3E%3Ccircle cx='168' cy='240' r='28' fill='%23f4a261'/%3E%3Ccircle cx='292' cy='240' r='28' fill='%238fbf9f'/%3E%3Cpath d='M140 330 q56-46 112 0' stroke='%23c17a3f' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Cpath d='M264 330 q56-46 112 0' stroke='%2393c5a4' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Crect x='440' y='210' width='420' height='170' rx='14' fill='%23ffffff' opacity='.9'/%3E%3Crect x='470' y='244' width='320' height='12' rx='6' fill='%23e6cfb5'/%3E%3Crect x='470' y='278' width='250' height='12' rx='6' fill='%23f0dfcb'/%3E%3Crect x='470' y='312' width='290' height='12' rx='6' fill='%23f0dfcb'/%3E%3Cpath d='M700 400 l52 30 -52 30z' fill='%23e07b39'/%3E%3C/svg%3E" alt="三岁双人兄妹在客厅地板上一起搭积木的纪录片封面" width="960" height="540">
+          <div class="yb-feature-body">
+            <span class="yb-chip">成长纪录</span>
+            <h3>《一起搭完的那座塔》——三岁双人的第 11 次合作</h3>
+            <p>积木第三次倒塌时，哥哥没有哭，妹妹先伸手扶住了歪掉的那一块。这支 18 分钟的纪录短片完整保留了他们的协商、争执与和解，也保留了家长最该学习的“不插话”。</p>
+            <div class="yb-tag-row">
+              <span class="yb-chip yb-chip--gray">双胞胎日常</span>
+              <span class="yb-chip yb-chip--gray">三岁纪录</span>
+              <span class="yb-chip yb-chip--mint">官方原创</span>
+            </div>
+            <div class="yb-video-real">
+              <span class="yb-meta">导演：悠宝爸妈 · 播放 12.6万 · 收藏 8,412</span>
+              <div class="yb-actions">
+                <button class="yb-act yb-like" type="button" data-count="3421">♡ 点赞 <span>3,421</span></button>
+                <button class="yb-act yb-save" type="button">☆ 收藏</button>
+                <span class="yb-play">▶ 立即观看</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="yb-feature-side">
+          <a class="yb-mini" href="#videos">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 180'%3E%3Crect width='240' height='180' fill='%23e8f5ec'/%3E%3Ccircle cx='120' cy='86' r='46' fill='%23fff'/%3E%3Ccircle cx='104' cy='78' r='5' fill='%234a3222'/%3E%3Ccircle cx='136' cy='78' r='5' fill='%234a3222'/%3E%3Cpath d='M106 98 q14 12 28 0' stroke='%233d7a55' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M60 152 q60-40 120 0' stroke='%2393c5a4' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="三岁妹妹独自穿鞋的短片缩略插画" width="240" height="180">
+            <div>
+              <h4>《我自己穿》——三岁妹妹的第一双魔术贴</h4>
+              <p>实用技巧 · 4.2万播放</p>
+            </div>
+          </a>
+          <a class="yb-mini" href="#videos">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 180'%3E%3Crect width='240' height='180' fill='%23fde8d3'/%3E%3Crect x='34' y='104' width='172' height='12' rx='6' fill='%23c17a3f'/%3E%3Ccircle cx='96' cy='70' r='22' fill='%23fff'/%3E%3Ccircle cx='150' cy='70' r='22' fill='%23fff'/%3E%3Ccircle cx='96' cy='68' r='4' fill='%234a3222'/%3E%3Ccircle cx='150' cy='68' r='4' fill='%234a3222'/%3E%3Cpath d='M84 100 q12 10 24 0' stroke='%23e07b39' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M138 100 q12 10 24 0' stroke='%23e07b39' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="两个孩子一起吃早餐的短片缩略插画" width="240" height="180">
+            <div>
+              <h4>《两个人的早餐桌》——不催吃饭的第 30 天</h4>
+              <p>育儿经验 · 9.8万播放</p>
+            </div>
+          </a>
+          <a class="yb-mini" href="#videos">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 180'%3E%3Crect width='240' height='180' fill='%23e6eef7'/%3E%3Cpath d='M0 140 L60 84 L120 130 L180 70 L240 120 V180 H0Z' fill='%23b6cde3'/%3E%3Ccircle cx='196' cy='46' r='22' fill='%23fff2cf'/%3E%3Crect x='96' y='118' width='48' height='34' rx='6' fill='%23fff'/%3E%3C/svg%3E" alt="城市郊外草地上两个孩子奔跑的短片缩略插画" width="240" height="180">
+            <div>
+              <h4>《第一次露营》——夜里听风的双人帐篷</h4>
+              <p>户外家庭 · 6.1万播放</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 视频流 -->
+  <section class="yb-section yb-section--tint" id="videos" aria-labelledby="ybVideoTitle">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">亲子影像库</span>
+          <h2 class="yb-h2" id="ybVideoTitle">悠宝三岁双人 <span class="yb-accent">内容精选流</span></h2>
+          <p class="yb-lead">覆盖日常记录、经验分享、城市探索与创作幕后，用文字索引与摘要帮你快速找到想看的那一支。</p>
+        </div>
+        <span class="yb-chip yb-chip--mint">本周更新 9 支</span>
+      </div>
+
+      <div class="yb-video-list">
+        <article class="yb-video-item">
+          <span class="yb-chip">日常记录</span>
+          <h3><a href="#videos">《门口等你的那一分钟》</a></h3>
+          <p>幼儿园接送的 60 秒：一个先跑出来，一个总要回头等。没有配乐，只有走廊的回声和两声几乎同时的“妈妈”。</p>
+          <div class="yb-tag-row"><span class="yb-chip yb-chip--gray">双宝</span><span class="yb-chip yb-chip--gray">情绪</span></div>
+          <div class="yb-video-real">
+            <span class="yb-meta"><span class="yb-video-author">@悠宝爸妈</span> · 8.4万播放</span>
+            <div class="yb-actions">
+              <button class="yb-act yb-like" type="button" data-count="2176">♡ 点赞 <span>2,176</span></button>
+              <button class="yb-act yb-save" type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="yb-video-item">
+          <span class="yb-chip">经验分享</span>
+          <h3><a href="#videos">《双人家庭的分床实验：第 14 天》</a></h3>
+          <p>不哭闹的秘诀不是强硬，而是把两张小床摆成“能看见彼此”的角度。我们把 14 天的记录剪成了一支 12 分钟的实操片。</p>
+          <div class="yb-tag-row"><span class="yb-chip yb-chip--gray">睡眠</span><span class="yb-chip yb-chip--gray">方法</span></div>
+          <div class="yb-video-real">
+            <span class="yb-meta"><span class="yb-video-author">@一半一半妈妈</span> · 11.2万播放</span>
+            <div class="yb-actions">
+              <button class="yb-act yb-like" type="button" data-count="3488">♡ 点赞 <span>3,488</span></button>
+              <button class="yb-act yb-save" type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="yb-video-item">
+          <span class="yb-chip">城市场景</span>
+          <h3><a href="#videos">《推着双人车穿过老城区》</a></h3>
+          <p>从菜市场到旧书店，一条适合双人推车的城市慢逛路线。我们在片中标注了三处方便休息的台阶与两间可借洗手间的店。</p>
+          <div class="yb-tag-row"><span class="yb-chip yb-chip--gray">城市探索</span><span class="yb-chip yb-chip--gray">路线</span></div>
+          <div class="yb-video-real">
+            <span class="yb-meta"><span class="yb-video-author">@城市里的小脚印</span> · 5.7万播放</span>
+            <div class="yb-actions">
+              <button class="yb-act yb-like" type="button" data-count="1493">♡ 点赞 <span>1,493</span></button>
+              <button class="yb-act yb-save" type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="yb-video-item">
+          <span class="yb-chip">创作幕后</span>
+          <h3><a href="#videos">《一支 18 分钟纪录片的剪辑台》</a></h3>
+          <p>从 6 小时素材到 18 分钟成片，我们把时间轴、旁白稿与配乐选择全部摊开，适合刚开始拍孩子的家庭创作者。</p>
+          <div class="yb-tag-row"><span class="yb-chip yb-chip--gray">剪辑</span><span class="yb-chip yb-chip--gray">教程</span></div>
+          <div class="yb-video-real">
+            <span class="yb-meta"><span class="yb-video-author">@剪辑师阿泽</span> · 4.3万播放</span>
+            <div class="yb-actions">
+              <button class="yb-act yb-like" type="button" data-count="986">♡ 点赞 <span>986</span></button>
+              <button class="yb-act yb-save" type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="yb-video-item">
+          <span class="yb-chip">人物访谈</span>
+          <h3><a href="#videos">《和一对双胞胎聊聊“分享”》</a></h3>
+          <p>三岁的孩子怎么理解分享？我们用 12 个小问题，记录了他们把最后一块饼干掰成两半的全过程，家长访谈同步穿插。</p>
+          <div class="yb-tag-row"><span class="yb-chip yb-chip--gray">访谈</span><span class="yb-chip yb-chip--gray">成长</span></div>
+          <div class="yb-video-real">
+            <span class="yb-meta"><span class="yb-video-author">@悠宝爸妈</span> · 7.9万播放</span>
+            <div class="yb-actions">
+              <button class="yb-act yb-like" type="button" data-count="2604">♡ 点赞 <span>2,604</span></button>
+              <button class="yb-act yb-save" type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="yb-video-item">
+          <span class="yb-chip">生活方式</span>
+          <h3><a href="#videos">《两个人的周末厨房》</a></h3>
+          <p>让孩子参与做饭而不是被抱在一边。低台面、安全刀、可水洗围裙，这支片子把能复用的家庭厨房改造清单都列了出来。</p>
+          <div class="yb-tag-row"><span class="yb-chip yb-chip--gray">亲子厨房</span><span class="yb-chip yb-chip--gray">清单</span></div>
+          <div class="yb-video-real">
+            <span class="yb-meta"><span class="yb-video-author">@厨房里的两只</span> · 6.5万播放</span>
+            <div class="yb-actions">
+              <button class="yb-act yb-like" type="button" data-count="1830">♡ 点赞 <span>1,830</span></button>
+              <button class="yb-act yb-save" type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="yb-section" id="topics" aria-labelledby="ybTopicTitle">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">专题企划</span>
+          <h2 class="yb-h2" id="ybTopicTitle">悠宝三岁双人 <span class="yb-accent">持续更新的专题</span></h2>
+          <p class="yb-lead">官网每年会围绕“双宝家庭”推出三到五个长期专题，每个专题下持续更新内容条目，欢迎创作者报名参与共创。</p>
+        </div>
+      </div>
+
+      <div class="yb-topic-grid">
+        <article class="yb-topic">
+          <span class="yb-topic-status">更新中 · 已上线 12 集</span>
+          <h3>一起长大 · 三岁这一年</h3>
+          <p>以“月”为单位，记录两个同岁孩子在同一屋檐下的差异：谁先学会系扣子，谁先在雨天说出想念。</p>
+          <ul>
+            <li>第 12 集：两个人的生日愿望清单</li>
+            <li>第 11 集：一起搭完的那座塔</li>
+            <li>第 10 集：第一次分开睡的两小时</li>
+          </ul>
+        </article>
+
+        <article class="yb-topic">
+          <span class="yb-topic-status">更新中 · 已上线 8 集</span>
+          <h3>双人出发 · 周末微旅行</h3>
+          <p>推车能到的地方都算远方。专题覆盖城市公园、近郊农场、图书馆与地铁沿线，附可打印出行清单。</p>
+          <ul>
+            <li>第 08 集：推着双人车穿过老城区</li>
+            <li>第 07 集：第一次露营，夜里听风</li>
+            <li>第 06 集：雨天也能去的室内路线</li>
+          </ul>
+        </article>
+
+        <article class="yb-topic">
+          <span class="yb-topic-status">企划招募 · 报名中</span>
+          <h3>一起拍 · 家庭创作者扶持</h3>
+          <p>面向所有双宝家庭开放投稿，入选作品将获得官网首页推荐、专业剪辑指导与高清素材托管支持。</p>
+          <ul>
+            <li>投稿主题：我的双人日常一分钟</li>
+            <li>评审维度：真实、构图、声音、陪伴感</li>
+            <li>结果公布：12 月 15 日官方发布</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="yb-section yb-section--soft" id="creators" aria-labelledby="ybCreatorTitle">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">创作者矩阵</span>
+          <h2 class="yb-h2" id="ybCreatorTitle">悠宝三岁双人 <span class="yb-accent">签约与共创创作者</span></h2>
+          <p class="yb-lead">企业签约创作者与社区共建者共同构成内容生态，点击“资料”可查看他们的创作方向与合作方式。</p>
+        </div>
+      </div>
+
+      <div class="yb-authors-grid">
+        <article class="yb-author">
+          <span class="yb-avatar" style="background:linear-gradient(135deg,#f4a261,#e07b39)">悠</span>
+          <h3>悠宝爸妈</h3>
+          <span class="yb-field">成长纪录 · 双人观察</span>
+          <span class="yb-nums"><span>作品 126</span><span>粉丝 18.4万</span></span>
+          <p>品牌主理人，两个孩子出生后开始自学拍摄。习惯用长镜头等待，不催促、不引导，只记录他们自己解决问题的那几分钟。</p>
+          <button class="yb-author-btn yb-author-info" type="button"
+            data-name="悠宝爸妈"
+            data-field="成长纪录 · 双人观察"
+            data-info="品牌主理人，连续四年记录双胞胎的日常。作品以长镜头与同期声为主，主张“先陪伴，再拍摄”。目前负责官网成长纪录频道的策划与审片。">查看资料</button>
+        </article>
+
+        <article class="yb-author">
+          <span class="yb-avatar" style="background:linear-gradient(135deg,#8fbf9f,#4f8b68)">一</span>
+          <h3>一半一半妈妈</h3>
+          <span class="yb-field">育儿方法 · 作息实践</span>
+          <span class="yb-nums"><span>作品 92</span><span>粉丝 11.7万</span></span>
+          <p>两个孩子的职场妈妈，擅长把踩过的坑整理成可执行清单。她的视频极少配乐，大部分画面是真实的早晨与夜晚。</p>
+          <button class="yb-author-btn yb-author-info" type="button"
+            data-name="一半一半妈妈"
+            data-field="育儿方法 · 作息实践"
+            data-info="双宝职场妈妈，专注可复用的家庭作息方案。内容以清单、对照和复盘为主，强调“不比较两个孩子”，是官网经验分享频道的常驻创作者。">查看资料</button>
+        </article>
+
+        <article class="yb-author">
+          <span class="yb-avatar" style="background:linear-gradient(135deg,#7fa8c9,#4b7597)">城</span>
+          <h3>城市里的小脚印</h3>
+          <span class="yb-field">城市探索 · 亲子路线</span>
+          <span class="yb-nums"><span>作品 74</span><span>粉丝 6.9万</span></span>
+          <p>双人推车实测派创作者，走过三十多条城市路线。每条视频都附台阶、洗手间与休息点的实地标注，方便家庭直接复用。</p>
+          <button class="yb-author-btn yb-author-info" type="button"
+            data-name="城市里的小脚印"
+            data-field="城市探索 · 亲子路线"
+            data-info="专注亲子友好路线的实测创作者，习惯在视频中标注推车通行条件、休息点与雨天备选方案，是官网城市探索专题的合作供稿人。">查看资料</button>
+        </article>
+
+        <article class="yb-author">
+          <span class="yb-avatar" style="background:linear-gradient(135deg,#c9a0d8,#9a6cb5)">剪</span>
+          <h3>剪辑师阿泽</h3>
+          <span class="yb-field">创作幕后 · 家庭剪辑</span>
+          <span class="yb-nums"><span>作品 58</span><span>粉丝 4.2万</span></span>
+          <p>纪录片剪辑出身，现在专门帮家庭创作者整理素材。他坚持一支片子只留三条线索，让观众记得住两个孩子各自的性格。</p>
+          <button class="yb-author-btn yb-author-info" type="button"
+            data-name="剪辑师阿泽"
+            data-field="创作幕后 · 家庭剪辑"
+            data-info="纪录片剪辑师，负责官网家庭影像的成片辅导。擅长把大量生活素材压缩成有节奏的短片，课程强调声音优先与线索克制。">查看资料</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌解析长文 -->
+  <section class="yb-section" id="insight" aria-labelledby="ybInsightTitle">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">深度解析</span>
+          <h2 class="yb-h2" id="ybInsightTitle">关于「悠宝三岁双人」的 <span class="yb-accent">品牌与内容解析</span></h2>
+          <p class="yb-lead">为什么一个亲子影像品牌，要把“三岁”和“双人”写进名字里？这一部分完整说明我们的定位、方法与长期计划。</p>
+        </div>
+      </div>
+
+      <div class="yb-article">
+        <h3>一、品牌定位：给双宝家庭一个被认真记录的官方入口</h3>
+        <p>「悠宝三岁双人」这个名字里有两个关键词，一个叫“三岁”，一个叫“双人”。三岁是孩子开始拥有自己语言、开始协商、开始说“我自己来”的年纪；双人则意味着家里同时有两个差不多大的孩子，他们的成长彼此交叠，也彼此竞争。作为一家专注亲子影像的企业，我们想做的不是把两个孩子拍成可爱的合影，而是分别记录他们作为独立个体的瞬间，再把这些瞬间放在同一条时间线上，让家长看到两个人如何一起长大。</p>
+        <p>这也是我们坚持做官方网站的原因。短视频平台擅长传播，却不擅长长期归档：一支 2023 年的片子，很容易在信息流里再也翻不到。官网承担的是“档案”和“标准”两件事。我们把每一支原创短片按年份、主题、创作者归档，标注拍摄时间、孩子年龄、拍摄器材与后期处理方式，让一个家庭在三年后仍然能找到孩子第一次说出完整句子的那一天。对品牌来说，官网也是官方发布的唯一出口：专题企划、征稿结果、企业动态都先在这里更新，再对外分发。</p>
+        <p>在内容气质上，我们刻意避开“精致育儿”的包装。品牌的核心方法论只有一句：先陪伴，再拍摄。很多家庭拍孩子时习惯喊“看这里”“笑一个”，结果是所有照片都像同一天。我们的创作者接受的第一条训练是关闭引导，把相机放在视线高度，等孩子自己进入状态。真实不等于粗糙，相反，真实需要更高的技术和更多的耐心：要预判光线，要忍住不喊停，要在六小时素材里找出那 18 分钟。</p>
+        <div class="yb-quote">“我们记录的不是两个孩子有多可爱，而是他们如何学会和另一个同龄人相处。这件事，只有双人家庭才懂。”</div>
+
+        <h3>二、内容方法：双人纪录片的四条创作准则</h3>
+        <p>第一条准则是分别对焦。双人题材最容易犯的错误是把两个孩子拍成一个整体，镜头里永远是两张脸并排。我们的做法是让每支片子至少有一次单独跟拍：一个人搭积木时另一个人在做什么？一个人哭的时候另一个人是靠近还是退开？这些细节才是双人关系的证据。第二条准则是保留同期声。孩子的语言有大量不标准的发音与停顿，这些恰恰是三年后最珍贵的东西，所以我们要求正片至少保留 60% 的现场原声，配乐只做铺底。</p>
+        <p>第三条准则是给冲突留位置。争抢玩具、互相告状、抢着说话，是双宝家庭每天的常态，也是最有价值的素材。我们不把这些片段剪掉做成“和谐版本”，而是在片中呈现家长如何处理：谁先道歉，谁被要求等待，规则是提前说好的还是临时定的。第四条准则是控制时长。家庭影像不需要都做成 18 分钟，一分钟的日常同样成立，关键是这一分钟有没有一个完整的动作和三处可辨认的细节。官网的内容库按这个标准分成快剪、纪录、访谈三类，方便家庭按自己的时间选择。</p>
+        <div class="yb-inline-figure">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23fff7ee'/%3E%3Crect x='40' y='40' width='180' height='120' rx='8' fill='%23fbe4cd' stroke='%23e6cfb5' stroke-width='3'/%3E%3Crect x='260' y='40' width='180' height='120' rx='8' fill='%23e8f5ec' stroke='%23bfe2cc' stroke-width='3'/%3E%3Ccircle cx='104' cy='96' r='22' fill='%23f4a261'/%3E%3Ccircle cx='330' cy='96' r='22' fill='%238fbf9f'/%3E%3Crect x='40' y='190' width='400' height='10' rx='5' fill='%23f0dfcb'/%3E%3Crect x='40' y='216' width='260' height='10' rx='5' fill='%23f0dfcb'/%3E%3C/svg%3E" alt="双人纪录片拍摄准则示意，两个独立镜头分别对准两个孩子" width="480" height="270">
+            <figcaption>分别对焦：每个孩子都有自己的镜头段落</figcaption>
+          </figure>
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23eef5f1'/%3E%3Cpath d='M60 200 q60-90 130-20 t130-40 t100 60' stroke='%23e07b39' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='70' cy='70' r='14' fill='%23f4a261'/%3E%3Ccircle cx='170' cy='90' r='14' fill='%23f4a261' opacity='.8'/%3E%3Ccircle cx='300' cy='60' r='14' fill='%23f4a261' opacity='.6'/%3E%3Ccircle cx='400' cy='100' r='14' fill='%23f4a261' opacity='.45'/%3E%3Crect x='60' y='226' width='360' height='8' rx='4' fill='%23c3d8cb'/%3E%3C/svg%3E" alt="亲子影像时间轴示意，标注两个孩子不同月龄的关键节点" width="480" height="270">
+            <figcaption>时间轴归档：每个节点对应一次官方记录</figcaption>
+          </figure>
+        </div>
+
+        <h3>三、内容生态：创作者、专题与社区如何互相支撑</h3>
+        <p>一个品牌如果只靠主理人更新，很快会枯竭。悠宝三岁双人的内容生态由三层构成：官方编辑部负责专题与标准制定，签约创作者负责稳定产出，社区用户负责提供真实素材与反馈。三层之间通过官网的投稿通道连接：用户可以上传自己的双人日常，编辑部每月挑选一部分进入“一起拍”企划，入选者获得剪辑指导与首页推荐，作品也会进入官网内容库的长期索引。</p>
+        <p>专题是这个生态的骨架。“一起长大·三岁这一年”解决纵向的时间感，“双人出发·周末微旅行”解决横向的空间感，而“一起拍·家庭创作者扶持”解决人从哪里来的问题。三者互相导流：看纪录片的家庭会顺手收藏出行路线，报名投稿的家庭会先去翻创作幕后教程。我们不追求爆款式的单点传播，更看重持续运营带来的复利——一支三年前的片子今天仍有家长在评论区补充自己的经验，这就是内容生态真正跑通的信号。</p>
+        <p>在企业层面，我们同样把自己当作一个需要长期经营的品牌。内容质量控制、创作者收益分配、稿件审核标准、版权与素材托管，都有明确的书面流程。官方发布的内容均标注原创与正版授权信息，转载需获得书面许可。这套看起来偏“重”的做法，在亲子影像这个信任成本极高的领域是必要的：家长把孩子交到镜头前，首先需要一个值得信赖的机构。</p>
+
+        <h3>四、长期计划：从三岁出发，通往更长的陪伴</h3>
+        <p>“三岁”不是终点，而是起点。我们的长期计划是跟随第一批签约家庭走到六岁、九岁，把同一条时间轴继续延长：三岁时抢玩具，六岁时共同完成一件手工作品，九岁时第一次分开参加夏令营。这类跨越多年的纪录，在单人家庭里很难成立，在双宝家庭里却天然具备戏剧张力。官网会为此保留一个持续更新的“长期档案”区域，按年份对外公开进度。</p>
+        <p>同时我们会把社会责任写进内容计划：为特殊儿童家庭提供免费拍摄名额，与社区图书馆合作开展家庭影像公益课，把课程讲义整理成可下载的公开文档。我们相信，一个亲子影像品牌的影响力不只体现在播放量，更体现在它是否让普通家庭觉得“这件事我也能做到”。设备可以普通，技术可以学习，真正稀缺的是愿意安静陪伴的那段时间。这也是悠宝三岁双人在官网首页反复强调的一句话：两个孩子一起长大的每一天，都值得被高清记录。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 口碑与榜单 -->
+  <section class="yb-section yb-section--tint" id="voices" aria-labelledby="ybVoicesTitle">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">数据与口碑</span>
+          <h2 class="yb-h2" id="ybVoicesTitle">悠宝三岁双人 <span class="yb-accent">热度榜与用户评价</span></h2>
+          <p class="yb-lead">热度榜由播放、收藏与完播率综合计算，每周一在官网更新；用户评价来自社区真实留言，未做删改。</p>
+        </div>
+      </div>
+
+      <div class="yb-rank-grid">
+        <div class="yb-rank">
+          <h3>本周热度榜 <small>官网官方发布</small></h3>
+          <ol>
+            <li><span class="yb-rank-no">1</span><span>《一起搭完的那座塔》</span><span class="yb-rank-score">9.8</span></li>
+            <li><span class="yb-rank-no">2</span><span>《双人家庭的分床实验》</span><span class="yb-rank-score">9.5</span></li>
+            <li><span class="yb-rank-no">3</span><span>《门口等你的那一分钟》</span><span class="yb-rank-score">9.3</span></li>
+            <li><span class="yb-rank-no">4</span><span>《两个人的周末厨房》</span><span class="yb-rank-score">9.1</span></li>
+            <li><span class="yb-rank-no">5</span><span>《第一次露营，夜里听风》</span><span class="yb-rank-score">8.9</span></li>
+            <li><span class="yb-rank-no">6</span><span>《推着双人车穿过老城区》</span><span class="yb-rank-score">8.7</span></li>
+          </ol>
+        </div>
+
+        <div class="yb-comments">
+          <article class="yb-comment">
+            <div class="yb-comment-head">
+              <span class="yb-avatar" style="background:linear-gradient(135deg,#f4a261,#e07b39)">林</span>
+              <div><strong>林女士</strong><br><small>两个孩子 3 岁 2 个月</small></div>
+            </div>
+            <span class="yb-stars">★★★★★</span>
+            <p>分床那支片子我看了三遍。我们家也试了一个月，最大的收获不是孩子睡了，而是我不再半夜冲进去。谢谢官网把这个过程拍出来。</p>
+          </article>
+
+          <article class="yb-comment">
+            <div class="yb-comment-head">
+              <span class="yb-avatar" style="background:linear-gradient(135deg,#8fbf9f,#4f8b68)">周</span>
+              <div><strong>周末爸爸</strong><br><small>龙凤胎家庭</small></div>
+            </div>
+            <span class="yb-stars">★★★★☆</span>
+            <p>想把老城区那支片子的路线做成地图，视频里标注的休息点很实用。唯一的建议是希望再增加一个两小时内的短路线版本，带两个娃走不了太久。</p>
+          </article>
+
+          <article class="yb-comment">
+            <div class="yb-comment-head">
+              <span class="yb-avatar" style="background:linear-gradient(135deg,#7fa8c9,#4b7597)">阿</span>
+              <div><strong>阿禾</strong><br><small>刚入门的家庭创作者</small></div>
+            </div>
+            <span class="yb-stars">★★★★★</span>
+            <p>剪辑幕后那支片子对我帮助最大。以前我总是什么都留，现在知道一支片子只留三条线索就够了，上周末剪的片子终于敢发出来了。</p>
+          </article>
+
+          <article class="yb-comment">
+            <div class="yb-comment-head">
+              <span class="yb-avatar" style="background:linear-gradient(135deg,#c9a0d8,#9a6cb5)">小</span>
+              <div><strong>小满妈妈</strong><br><small>关注两宝相处方式</small></div>
+            </div>
+            <span class="yb-stars">★★★★★</span>
+            <p>最打动我的是他们不剪掉冲突。我家两个每天抢东西，看到片子里家长也不插手，突然觉得这不叫失败，这很正常。</p>
+          </article>
+
+          <article class="yb-comment">
+            <div class="yb-comment-head">
+              <span class="yb-avatar" style="background:linear-gradient(135deg,#e0a3a3,#b96b6b)">陈</span>
+              <div><strong>陈先生</strong><br><small>两孩家庭 · 关注制作标准</small></div>
+            </div>
+            <span class="yb-stars">★★★★☆</span>
+            <p>作为同行说句公道话，同期声保留到这个比例不容易，后期成本很高。画面稳定度还有提升空间，有几段手持略晃，但整体质感在亲子类里算靠前。</p>
+          </article>
+
+          <article class="yb-comment">
+            <div class="yb-comment-head">
+              <span class="yb-avatar" style="background:linear-gradient(135deg,#a9c98f,#6f9a4f)">豆</span>
+              <div><strong>豆豆外婆</strong><br><small>帮忙带娃的长辈</small></div>
+            </div>
+            <span class="yb-stars">★★★★★</span>
+            <p>不太会用手机也看懂了。字大、讲得慢，我把露营那集转给老姐妹，她们都说现在的年轻人拍孩子拍得真好。</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 & 合作 & FAQ -->
+  <section class="yb-section" id="updates" aria-labelledby="ybUpdateTitle">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">企业动态与帮助</span>
+          <h2 class="yb-h2" id="ybUpdateTitle">悠宝三岁双人 <span class="yb-accent">官方发布与答疑</span></h2>
+          <p class="yb-lead">品牌资讯、合作机构与常见问题集中在这里，更新日志与征稿结果均以官网发布为准。</p>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:30px;align-items:start" class="yb-updates-faq-grid">
+        <div class="yb-updates">
+          <h3 style="font-size:17px;margin-bottom:4px">企业动态</h3>
+          <div class="yb-update">
+            <time>2026-11-20</time>
+            <div><h3>「一起拍」投稿通道正式开放</h3><p>双宝家庭可在官网投稿页上传一分钟以内的原创日常，入选作品将获得剪辑指导与首页推荐。</p></div>
+          </div>
+          <div class="yb-update">
+            <time>2026-11-14</time>
+            <div><h3>成长纪录频道上线高清原片下载</h3><p>签约创作者现可下载自家作品的高清母版，用于家庭存档，官方保留署名与版权信息。</p></div>
+          </div>
+          <div class="yb-update">
+            <time>2026-11-05</time>
+            <div><h3>与三家社区图书馆达成影像公益合作</h3><p>首期家庭影像公益课已开放报名，内容涵盖手机拍摄、同期声采集与基础剪辑。</p></div>
+          </div>
+          <div class="yb-update">
+            <time>2026-10-28</time>
+            <div><h3>《三岁这一年·双人篇》第十一集上线</h3><p>本集聚焦两个孩子合作搭积木的完整过程，正片 18 分钟，含导演旁白。</p></div>
+          </div>
+
+          <h3 style="font-size:17px;margin:24px 0 4px">合作机构</h3>
+          <div class="yb-partners">
+            <div class="yb-partner">城南图书馆</div>
+            <div class="yb-partner">小树亲子剧场</div>
+            <div class="yb-partner">青禾影像器材</div>
+            <div class="yb-partner">邻里社区中心</div>
+          </div>
+        </div>
+
+        <div id="faq">
+          <h3 style="font-size:17px;margin-bottom:14px">常见问题</h3>
+          <div class="yb-faq">
+            <details open>
+              <summary>「悠宝三岁双人」是什么类型的品牌？</summary>
+              <div class="yb-a">我们是一家专注双胞胎与两宝家庭的亲子影像品牌，官方网站长期归档原创纪录片、经验分享与城市路线内容，并提供家庭创作者扶持计划。</div>
+            </details>
+            <details>
+              <summary>不是双胞胎家庭，也可以投稿吗？</summary>
+              <div class="yb-a">可以。只要家里有两个年龄接近的孩子，内容真实、有具体细节，都欢迎上传。评审更看重记录方式，而不是孩子是否上镜。</div>
+            </details>
+            <details>
+              <summary>投稿有主题和时长限制吗？</summary>
+              <div class="yb-a">当前企划主题为“我的双人日常一分钟”，正片建议 60 秒以内，素材请保留原声。超过 5 分钟的纪录类作品可投递至专门的成长纪录通道。</div>
+            </details>
+            <details>
+              <summary>入选后会获得哪些支持？</summary>
+              <div class="yb-a">包括专业剪辑师的一对一辅导、高清素材托管、官网首页推荐位，以及后续专题的优先参与资格。作品版权仍归创作者所有。</div>
+            </details>
+            <details>
+              <summary>官网内容可以转载吗？</summary>
+              <div class="yb-a">所有正片均标注原创与版权信息，个人分享欢迎转发链接；商业用途需提前联系官方获取书面授权，请勿二次剪辑或去除水印。</div>
+            </details>
+            <details>
+              <summary>如何联系品牌方？</summary>
+              <div class="yb-a">可通过页面底部的合作邮箱提交需求，或在投稿弹窗中留下联系方式。工作日 48 小时内会有专人回复。</div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 投稿 CTA -->
+  <section class="yb-section" id="submit" aria-labelledby="ybCtaTitle">
+    <div class="yb-wrap">
+      <div class="yb-cta">
+        <div>
+          <h2 id="ybCtaTitle">把你家的双人日常，交给值得信赖的官方档案</h2>
+          <p>上传一支一分钟以内的原创短片，参与「一起拍」家庭创作者扶持计划。入选作品将获得专业剪辑指导、高清素材托管与官网推荐，让陪伴被更久地保存下来。</p>
+        </div>
+        <div class="yb-cta-actions">
+          <button class="yb-btn yb-btn--amber yb-open-submit" type="button">立即投稿</button>
+          <button class="yb-btn yb-btn--line yb-btn--on-dark yb-copy-link" type="button" style="border-color:#ffeede;color:#ffeede">复制官网链接</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="yb-footer">
+  <div class="yb-wrap">
+    <div class="yb-footer-grid">
+      <div>
+        <div class="yb-footer-brand">
+          <span class="yb-brand-mark" aria-hidden="true">悠</span>
+          <span><strong>悠宝三岁双人</strong><span>KIDS FILM STUDIO</span></span>
+        </div>
+        <p>专注双胞胎与两宝家庭的亲子影像品牌，以原创、正版、高清的纪录片与经验分享，持续运营一个有温度的内容生态。</p>
+      </div>
+      <div>
+        <h4>内容频道</h4>
+        <ul>
+          <li><a href="#feature">本周精选</a></li>
+          <li><a href="#videos">亲子影像库</a></li>
+          <li><a href="#topics">专题企划</a></li>
+          <li><a href="#insight">品牌解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#creators">创作者矩阵</a></li>
+          <li><a href="#updates">企业动态</a></li>
+          <li><a href="#voices">用户口碑</a></li>
+          <li><a href="#faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>合作与投稿</h4>
+        <ul>
+          <li>合作邮箱：hello@youbao-kids.example</li>
+          <li>投稿咨询：工作日 10:00–18:00</li>
+          <li><a href="#submit">「一起拍」报名入口</a></li>
+          <li><a href="#faq">版权与转载说明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="yb-copyright">
+      <span>悠宝三岁双人官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容均为原创正版 · 转载需授权</span>
+    </div>
+  </div>
+</footer>
+
+<button class="yb-to-top" id="ybToTop" type="button" aria-label="回到顶部">↑</button>
+<div class="yb-toast" id="ybToast" role="status" aria-live="polite"></div>
+
+<div class="yb-modal" id="ybAuthorModal" role="dialog" aria-modal="true" aria-labelledby="ybAuthorModalName">
+  <div class="yb-modal-box">
+    <button class="yb-modal-close" type="button" data-close="ybAuthorModal" aria-label="关闭">×</button>
+    <h3 id="ybAuthorModalName">创作者资料</h3>
+    <p id="ybAuthorModalField" style="color:#e07b39;font-weight:800;margin-top:6px"></p>
+    <p id="ybAuthorModalInfo" style="margin-top:12px"></p>
+  </div>
+</div>
+
+<div class="yb-modal" id="ybSubmitModal" role="dialog" aria-modal="true" aria-labelledby="ybSubmitModalTitle">
+  <div class="yb-modal-box">
+    <button class="yb-modal-close" type="button" data-close="ybSubmitModal" aria-label="关闭">×</button>
+    <h3 id="ybSubmitModalTitle">参与「一起拍」投稿</h3>
+    <p>留下联系方式与作品简述，编辑部会在 48 小时内回复。请确保作品为本人原创。</p>
+    <input class="yb-field-input" id="ybSubmitName" type="text" placeholder="你的昵称，例如：一半一半妈妈" aria-label="昵称">
+    <input class="yb-field-input" id="ybSubmitContact" type="text" placeholder="联系方式，例如：邮箱或手机号" aria-label="联系方式">
+    <textarea class="yb-field-area" id="ybSubmitDesc" placeholder="作品简述：两个孩子多大？这支片子记录了什么？" aria-label="作品简述"></textarea>
+    <div class="yb-modal-actions">
+      <button class="yb-btn yb-btn--line" type="button" data-close="ybSubmitModal">稍后再说</button>
+      <button class="yb-btn yb-btn--main" type="button" id="ybSubmitSend">提交投稿</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('ybToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-on'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('ybBurger');
+  var nav = document.getElementById('ybNav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('ybSearchInput');
+  var searchBtn = document.getElementById('ybSearchBtn');
+  var searchTip = document.getElementById('ybSearchTip');
+  function runSearch(){
+    var q = (searchInput && searchInput.value || '').trim();
+    if(!q){
+      searchTip.textContent = '试试搜索“双人”“三岁”“露营”“剪辑”等关键词。';
+      searchTip.classList.add('is-on');
+      return;
+    }
+    var hits = ['《一起搭完的那座塔》', '《双人家庭的分床实验》', '《门口等你的那一分钟》', '《两个人的周末厨房》', '《第一次露营，夜里听风》', '《推着双人车穿过老城区》', '《一支 18 分钟纪录片的剪辑台》'];
+    var matched = [];
+    for(var i=0;i<hits.length;i++){
+      if(hits[i].indexOf(q) !== -1) matched.push(hits[i]);
+    }
+    if(matched.length === 0){
+      if(q.indexOf('双') !== -1 || q.indexOf('两') !== -1 || q.indexOf('三岁') !== -1 || q.indexOf('亲子') !== -1){
+        matched = hits.slice(0,4);
+      }
+    }
+    if(matched.length){
+      searchTip.textContent = '为你找到 ' + matched.length + ' 条相关内容：' + matched.join('、');
+    }else{
+      searchTip.textContent = '暂未找到与“' + q + '”完全匹配的内容，可前往「亲子影像库」浏览全部内容，或换个关键词试试。';
+    }
+    searchTip.classList.add('is-on');
+  }
+  if(searchBtn){ searchBtn.addEventListener('click', runSearch); }
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+    });
+  }
+
+  /* 点赞 */
+  var likes = document.querySelectorAll('.yb-like');
+  for(var i=0;i<likes.length;i++){
+    (function(btn){
+      btn.addEventListener('click', function(){
+        var span = btn.querySelector('span');
+        var base = parseInt(btn.getAttribute('data-count'), 10) || 0;
+        var active = btn.classList.toggle('is-liked');
+        var num = active ? base + 1 : base;
+        span.textContent = num.toLocaleString('en-US');
+        btn.firstChild.nodeValue = active ? '♥ 已赞 ' : '♡ 点赞 ';
+      });
+    })(likes[i]);
+  }
+
+  /* 收藏 */
+  var saves = document.querySelectorAll('.yb-save');
+  for(var j=0;j<saves.length;j++){
+    (function(btn){
+      btn.addEventListener('click', function(){
+        var active = btn.classList.toggle('is-saved');
+        btn.textContent = active ? '★ 已收藏' : '☆ 收藏';
+        toast(active ? '已加入你的收藏夹' : '已取消收藏');
+      });
+    })(saves[j]);
+  }
+
+  /* 弹窗通用 */
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(m){ m.classList.add('is-on'); }
+  }
+  function closeModal(id){
+    var m = document.getElementById(id);
+    if(m){ m.classList.remove('is-on'); }
+  }
+  var closers = document.querySelectorAll('[data-close]');
+  for(var k=0;k<closers.length;k++){
+    (function(el){
+      el.addEventListener('click', function(){
+        closeModal(el.getAttribute('data-close'));
+      });
+    })(closers[k]);
+  }
+  var modals = document.querySelectorAll('.yb-modal');
+  for(var m2=0;m2<modals.length;m2++){
+    (function(mo){
+      mo.addEventListener('click', function(e){
+        if(e.target === mo){ mo.classList.remove('is-on'); }
+      });
+    })(modals[m2]);
+  }
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      var actives = document.querySelectorAll('.yb-modal.is-on');
+      for(var n=0;n<actives.length;n++){ actives[n].classList.remove('is-on'); }
+    }
+  });
+
+  /* 作者资料 */
+  var authorBtns = document.querySelectorAll('.yb-author-info');
+  for(var p=0;p<authorBtns.length;p++){
+    (function(btn){
+      btn.addEventListener('click', function(){
+        document.getElementById('ybAuthorModalName').textContent = btn.getAttribute('data-name') || '创作者资料';
+        document.getElementById('ybAuthorModalField').textContent = btn.getAttribute('data-field') || '';
+        document.getElementById('ybAuthorModalInfo').textContent = btn.getAttribute('data-info') || '';
+        openModal('ybAuthorModal');
+      });
+    })(authorBtns[p]);
+  }
+
+  /* 投稿 */
+  var submitOpeners = document.querySelectorAll('.yb-open-submit, #ybSubmitTop');
+  for(var q2=0;q2<submitOpeners.length;q2++){
+    (function(el){
+      el.addEventListener('click', function(e){
+        e.preventDefault();
+        openModal('ybSubmitModal');
+      });
+    })(submitOpeners[q2]);
+  }
+  var submitSend = document.getElementById('ybSubmitSend');
+  if(submitSend){
+    submitSend.addEventListener('click', function(){
+      var name = (document.getElementById('ybSubmitName').value || '').trim();
+      var contact = (document.getElementById('ybSubmitContact').value || '').trim();
+      if(!name || !contact){
+        toast('请填写昵称与联系方式');
+        return;
+      }
+      closeModal('ybSubmitModal');
+      toast('投稿已提交，编辑部会在 48 小时内回复');
+      document.getElementById('ybSubmitName').value = '';
+      document.getElementById('ybSubmitContact').value = '';
+      document.getElementById('ybSubmitDesc').value = '';
+    });
+  }
+
+  /* 复制链接 */
+  var copyBtns = document.querySelectorAll('.yb-copy-link');
+  for(var c=0;c<copyBtns.length;c++){
+    (function(btn){
+      btn.addEventListener('click', function(){
+        var text = '悠宝三岁双人 · 亲子影像品牌官方网站';
+        function fallback(){
+          try{
+            var ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
+            toast('页面信息已复制，可分享给其他家庭');
+          }catch(err){
+            toast('复制失败，请手动分享页面');
+          }
+        }
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(text).then(function(){
+            toast('页面信息已复制，可分享给其他家庭');
+          }).catch(fallback);
+        }else{
+          fallback();
+        }
+      });
+    })(copyBtns[c]);
+  }
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('ybToTop');
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+    window.addEventListener('scroll', function(){
+      if(window.pageYOffset > 500){
+        toTop.classList.add('is-on');
+      }else{
+        toTop.classList.remove('is-on');
+      }
+    }, {passive:true});
+  }
+})();
+</script>
+</body>
+          </html>
